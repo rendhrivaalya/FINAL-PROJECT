@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Internship Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfdfd;
+            padding: 15px;
+        }
+
+        .internship-title {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #6B2685;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .icon-box {
+            background-color: #f3e8ff;
+            border-radius: 16px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+        }
+
+        .icon-box img {
+            width: 28px;
+            height: 28px;
+        }
+
+        .internship-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            padding: 15px;
+            margin-top: 10px;
+            position: relative;
+            padding-bottom: 50px;
+        }
+
+        .internship-card .see-more-btn {
+            background: linear-gradient(to right, #6B2685, #A855F7);
+            border: none;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .header-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .icon-back {
+            float: right;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            color: #6B2685;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .icon-back:hover {
+            color: #6B2685;
+            background-color: rgba(107, 38, 133, 0.15);
+        }
+
+        h2 {
+            color: #6B2685;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+            font-weight: 600;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px 0;
+        }
+
+        .info-row img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .info-row small {
+            color: gray;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-text">
+        <h2><strong>MagDiti</strong></h2>
+        <a href="dashboard.html" class="icon-back">
+            <span class="glyphicon glyphicon-chevron-left" style="font-size: 24px;"></span>
+        </a>
+    </div>
+
+    <div class="internship-title">
+        <div class="icon-box">
+            <img src="image/regristration.png" alt="Internship Icon">
+        </div>
+        <h3><b>Internship Information</b></h3>
+    </div>
+
+    <!-- CARD 1 -->
+    <div class="internship-card">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center;">
+                <img src="image/voltron.png" alt="Voltron Logo" class="logo-img">
+                <strong style="color:#FF971E; margin-right: 20px;">Voltron Indonesia</strong>
+                <strong class="text-muted" style="color: #5D5A5A; position: absolute; top: 15px; right: 15px;">UI/UX
+                    Designer</strong>
+            </div>
+            <a href="internship_details.html">
+            <button class="see-more-btn">Details</button>
+            </a>
+        </div>
+        <div class="info-row"><img src="image/position.png"><small>Desain > UX Designer</small></div>
+        <div class="info-row"><img src="image/time.png"><small>Contacts (3 month)</small></div>
+        <div class="info-row"><img src="image/sallary.png"><small>IDR 1.500.000 - 3.000.000</small></div>
+        <div class="info-row"><img src="image/location.png"><small>Sleman, Yogyakarta</small></div>
+        <div class="info-row"><img src="image/employe.png"><small>2-3 Employees</small></div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="internship-card">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center;">
+                <img src="image/Mediatechindo.png" alt="Mediatechindo Logo" class="logo-img">
+                <strong style="color:#FF971E; margin-right: 20px;">PT Mediatechindo</strong>
+                <strong class="text-muted" style="color: #5D5A5A; position: absolute; top: 15px; right: 15px;">Data
+                    Engineer</strong>
+            </div>
+            <button class="see-more-btn">Details</button>
+        </div>
+        <div class="info-row"><img src="image/position.png"><small>Data Engineer</small></div>
+        <div class="info-row"><img src="image/time.png"><small>Contacts (3 month)</small></div>
+        <div class="info-row"><img src="image/sallary.png"><small>IDR 2.500.000 - 4.000.000</small></div>
+        <div class="info-row"><img src="image/location.png"><small>Pakualaman, Yogyakarta</small></div>
+        <div class="info-row"><img src="image/employe.png"><small>1 Employees</small></div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="internship-card">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center;">
+                <img src="image/Kode_Kolektif.png" alt="Kode Kolektif Logo" class="logo-img">
+                <strong style="color:#FF971E; margin-right: 20px;">PT Kode Kolektif<br>Indonesia</strong>
+                <strong class="text-muted" style="color: #5D5A5A; position: absolute; top: 15px; right: 15px;">Quality
+                    Assurance</strong>
+            </div>
+            <button class="see-more-btn">Details</button>
+        </div>
+        <div class="info-row"><img src="image/position.png"><small>Quality Assurance</small></div>
+        <div class="info-row"><img src="image/time.png"><small>Contacts (3 month)</small></div>
+        <div class="info-row"><img src="image/sallary.png"><small>IDR 2.700.000 - 3.500.000</small></div>
+        <div class="info-row"><img src="image/location.png"><small>Sleman, Yogyakarta</small></div>
+        <div class="info-row"><img src="image/employe.png"><small>2-3 Employees</small></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Logbook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 3.4.1 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfdfd;
+            padding: 15px;
+        }
+
+        .internship-title {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: #6B2685;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .icon-box {
+            background-color: #f3e8ff;
+            border-radius: 16px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+        }
+
+        .icon-box img {
+            width: 28px;
+            height: 28px;
+        }
+
+        .internship-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .internship-card .see-more-btn {
+            background: linear-gradient(to right, #6B2685, #A855F7);
+            border: none;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .header-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .icon-back {
+            float: right;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            color: #6B2685;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .icon-back:hover {
+            color: #6B2685;
+            background-color: rgba(107, 38, 133, 0.15);
+        }
+
+        h2 {
+            color: #6B2685;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+            font-weight: 600;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px 0;
+        }
+
+        .info-row img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .info-row small {
+            color: gray;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .requirements-title {
+            color: #6B2685;
+            font-weight: 700;
+            margin-top: 25px;
+        }
+
+        .apply-btn {
+            background: linear-gradient(to right, #6B2685, #A855F7);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 50px;
+            font-size: 16px;
+            margin-top: 25px;
+            box-shadow: 0 4px 6px rgba(107, 38, 133, 0.25);
+        }
+
+        .apply-btn:active {
+            background: linear-gradient(to right, #A855F7, #6B2685);
+            /* Dibalik */
+            transform: scale(0.98);
+            /* Sedikit mengecil untuk efek "tekan" */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) inset;
+        }
+
+        .apply-btn a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .apply-btn a:hover {
+            color: #38034a;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .application-info {
+            border: none;
+            border-radius: 10px;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .application-info td {
+            padding: 4px 8px;
+            vertical-align: top;
+        }
+
+        textarea {
+            width: 100%;
+            border: 2px solid #6B2685;
+            border-radius: 10px;
+            padding: 10px;
+            resize: none;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        textarea::placeholder {
+            color: #aaa;
+            font-style: italic;
+        }
+
+        .upload-label {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #6B2685;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .upload-label img {
+            width: 16px;
+            margin-right: 6px;
+        }
+
+        #cv-upload {
+            display: none;
+        }
+
+        .application-info td,
+        .application-info th {
+            order: none !important;
+            padding: 4px 8px;
+        }
+
+        textarea {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .upload-label {
+            font-size: 12px;
+        }
+
+
+        .logo-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        h2 {
+            color: #6B2685;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+            font-weight: 600;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .internship-card {
+            padding: 15px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header-text">
+        <h2><strong>MagDiti</strong></h2>
+        <a href="dashboard.html" class="icon-back">
+            <span class="glyphicon glyphicon-chevron-left" style="font-size: 24px;"></span>
+        </a>
+    </div>
+
+    <!-- Title -->
+    <div class="internship-title">
+        <div class="icon-box">
+            <img src="image/logbook.png" alt="Internship Icon">
+        </div>
+        <h3><b>Daily Logbook</b></h3>
+    </div>
+
+    <!-- Application Form -->
+    <div class="internship-card">
+        <table class="application-info">
+            <tbody>
+                <tr>
+                    <th style="width: 150px;">Day/Date</th>
+                    <td>: 15 January 2025</td>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <td>: 9-11 AM</td>
+                </tr>
+                <tr>
+                    <th>Subject</th>
+                    <td>: E-commerce app wireframe creation</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <textarea rows="6" placeholder="Write a summary of your activities at the internship here...."></textarea>
+    </div>
+
+
+    <!-- Signature Section -->
+    <div style="display: flex; justify-content: space-between; margin: 30px 20px 10px;">
+        <div class="text-center">
+            <p style="font-size: 12px;">Director signature</p>
+            <br><br>
+            <p style="font-size: 13px; font-weight: 500;">(Director)</p>
+        </div>
+        <div class="text-center">
+            <p style="font-size: 12px;">Mentor Signature</p>
+            <br><br>
+            <p style="font-size: 13px; font-weight: 500;">(Mentor)</p>
+        </div>
+    </div>
+
+    <!-- Apply Button -->
+    <div class="text-center">
+        <a href="history_logbook.html">
+            <button class="apply-btn">Submit</button>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

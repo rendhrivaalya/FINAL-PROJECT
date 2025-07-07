@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - MagDiti</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(-45deg, #f2e9ff, #6B2685, #e0c3fc, #A855F7);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+/* Animasi gradien */
+    @keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+    
+        background-position: 100% 50%;
+  
+    }
+   
+    100% {
+    
+        background-position: 0% 50%;
+  
+    }
+    }
+    .register-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .form-control {
+      background-color: rgba(168, 85, 247, 0.26);;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .form-control::placeholder {
+      color: #5D5A5A;
+      font-size: 12px;
+    }
+     .btn-purple {
+      background: linear-gradient(to right, #6B2685, #A855F7);
+      color: white;
+      border-radius: 20px;
+      border-color: #6B2685;
+      width: 100%;
+      font-weight: bold;
+    }
+    .btn-purple:hover {
+      color: #38034a;
+    }
+    .btn-purple:active {
+      background: linear-gradient(to right, #A855F7, #6B2685); /* Dibalik */
+      transform: scale(0.98); /* Sedikit mengecil untuk efek "tekan" */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3) inset;
+    }
+    .btn-purple a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .btn-purple a:hover {
+      color: #38034a;
+    }
+    .informatic-logo {
+      margin: 30px auto;
+      max-width: 200px;
+    }
+    
+    h2 {
+      color: #6B2685;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+      font-weight: 600;
+      margin-top: 20px;
+      text-align: center;
+    }
+    a {
+      color: #6B2685;
+    }
+    a:hover{
+      color: #A855F7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-box">
+    <h2>Welcome in MagDiti!</h2>
+    <img src="d3ti.png" class="informatic-logo" alt="Amikom Logo">
+    <form>
+      <input type="text" class="form-control" placeholder="Enter your full name">
+      <input type="email" class="form-control" placeholder="Enter your Email">
+      <input type="password" class="form-control" placeholder="Enter Password">
+      <input type="password" class="form-control" placeholder="Confirm Password">
+      <button type="submit" class="btn btn-purple"><a href="login.html">Register</a></button>
+    </form>
+    <p class="subtext">Already have an account? <a href="login.html">Sign In</a></p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

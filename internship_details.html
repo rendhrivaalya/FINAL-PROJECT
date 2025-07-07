@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Internship Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 3.4.1 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfdfd;
+            padding: 15px;
+        }
+
+        .internship-title {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: #6B2685;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .icon-box {
+            background-color: #f3e8ff;
+            border-radius: 16px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+        }
+
+        .icon-box img {
+            width: 28px;
+            height: 28px;
+        }
+
+        .internship-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .internship-card .see-more-btn {
+            background: linear-gradient(to right, #6B2685, #A855F7);
+            border: none;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .header-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .icon-back {
+            float: right;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            color: #6B2685;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .icon-back:hover {
+            color: #6B2685;
+            background-color: rgba(107, 38, 133, 0.15);
+        }
+
+        h2 {
+            color: #6B2685;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+            font-weight: 600;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px 0;
+        }
+
+        .info-row img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .info-row small {
+            color: gray;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .requirements-title {
+            color: #6B2685;
+            font-weight: 700;
+            margin-top: 25px;
+        }
+
+        .apply-btn {
+            background: linear-gradient(to right, #6B2685, #A855F7);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 50px;
+            font-size: 16px;
+            margin-top: 25px;
+            box-shadow: 0 4px 6px rgba(107, 38, 133, 0.25);
+        }
+
+        .apply-btn:active {
+            background: linear-gradient(to right, #A855F7, #6B2685);
+            /* Dibalik */
+            transform: scale(0.98);
+            /* Sedikit mengecil untuk efek "tekan" */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) inset;
+        }
+
+        .apply-btn a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .apply-btn a:hover {
+            color: #38034a;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header-text">
+        <h2><strong>MagDiti</strong></h2>
+        <a href="internship_information.html" class="icon-back">
+            <span class="glyphicon glyphicon-chevron-left" style="font-size: 24px;"></span>
+        </a>
+    </div>
+
+    <!-- Title -->
+    <div class="internship-title">
+        <div class="icon-box">
+            <img src="image/regristration.png" alt="Internship Icon">
+        </div>
+        <h3><b>Internship Details</b></h3>
+    </div>
+
+    <!-- Internship Card -->
+    <div class="internship-card">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center;">
+                <img src="image/voltron.png" alt="Voltron Logo" class="logo-img">
+                <strong style="color:#FF971E; margin-right: 20px;">Voltron Indonesia</strong>
+                <strong class="text-muted" style="color: #5D5A5A; position: absolute; top: 15px; right: 15px;">UI/UX
+                    Designer</strong>
+            </div>
+        </div>
+        <div class="info-row"><img src="image/position.png"><small>Desain > UX Designer</small></div>
+        <div class="info-row"><img src="image/time.png"><small>Contacts (3 month)</small></div>
+        <div class="info-row"><img src="image/sallary.png"><small>IDR 1.500.000 - 3.000.000</small></div>
+        <div class="info-row"><img src="image/location.png"><small>Sleman, Yogyakarta</small></div>
+        <div class="info-row"><img src="image/employe.png"><small>2-3 Employees</small></div>
+    </div>
+
+    <h4 class="requirements-title">Main Responsibilities</h4>
+    <ul style="padding-left: 18px;">
+        <li>Design UI/UX for all Voltron products (web & mobile).</li>
+        <li>Lead the end-to-end design process: user research, wireframing, prototyping, visual design, and usability
+            testing.</li>
+        <li>Translate business and user needs into intuitive and visually appealing interfaces.</li>
+        <li>Conduct user research (interviews, surveys, usability studies) to identify pain points.</li>
+        <li>Create and present user personas, journey maps, wireframes, and interactive prototypes to stakeholders.</li>
+        <li>Develop and maintain a design system and UI component library to ensure product consistency.</li>
+        <li>Collaborate with cross-functional teams (product, engineering, marketing) to ensure proper implementation of
+            designs.</li>
+        <li>Perform A/B testing and analyze user data for ongoing design improvements.</li>
+        <li>Advocate for UX best practices, accessibility, and usability across the organization.</li>
+        <li>Stay updated with the latest trends, tools, and technologies in UI/UX—especially in the electric vehicle
+            industry.</li>
+    </ul>
+
+
+    <!-- Requirements Section -->
+    <h4 class="requirements-title">Requirements</h4>
+    <ol style="padding-left: 18px;">
+        <li>Have experience as a Product Designer</li>
+        <li>Experienced in UI/UX field</li>
+        <li>Proficient in English</li>
+        <li>Have knowledge of ADOBE CC, Figma, LOTTIE and other software products.</li>
+        <li>Aware of current technology trends and applications in the electric vehicle industry</li>
+        <li>Have a BS degree in Communication or Visual Design.</li>
+    </ol>
+
+    <!-- Apply Button -->
+    <div class="text-center">
+        <a href="internship_apllication.html" class="aplly-btn">
+            <button class="apply-btn">Apply</button>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

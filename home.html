@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to MagDiti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 3.4.1 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <style>
+   body {
+      background: linear-gradient(-45deg, #f2e9ff, #6B2685, #e0c3fc, #A855F7);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+/* Animasi gradien */
+    @keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+    
+        background-position: 100% 50%;
+  
+    }
+   
+    100% {
+    
+        background-position: 0% 50%;
+  
+    }
+    }
+    .home-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+
+    .logo-img {
+      width: 70px;
+    }
+
+    h2 {
+      color: #6B2685;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+      font-weight: 600;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .informatic-logo {
+      margin: 30px auto;
+      max-width: 200px;
+    }
+
+    .btn-purple {
+      background: linear-gradient(to right, #6B2685, #A855F7);
+      color: white;
+      border-radius: 20px;
+      border-color: #6B2685;
+      width: 100%;
+      font-weight: bold;
+    }
+    .btn-purple:hover {
+      color: #38034a;
+    }
+    .btn-purple:active {
+      background: linear-gradient(to right, #A855F7, #6B2685); /* Dibalik */
+      transform: scale(0.98); /* Sedikit mengecil untuk efek "tekan" */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3) inset;
+    }
+    .btn-purple a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .btn-purple a:hover {
+      color: #38034a;
+    }
+
+    .text-small {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Centered Container -->
+  <div class="home-box">
+    <div class="text-center">
+
+      <!-- Title -->
+      <h2>Welcome To MagDiti!</h2>
+
+      <!-- Informatics Logo -->
+      <div class="informatic-logo">
+        <img src="d3ti.png" alt="Teknik Informatika" class="img-responsive center-block" style="max-height: 120px;">
+      </div>
+
+      <!-- Login -->
+      <p class="text-small">Already have an account?</p>
+      <button class="btn btn-purple"><a href="login.html">Login</a></button>
+
+      <!-- Register -->
+      <p class="text-small">Don't have an account?</p>
+      <button class="btn btn-purple"><a href="register.html">Register</a></button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

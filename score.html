@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Total Score</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 3.4.1 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfdfd;
+            padding: 15px;
+        }
+
+        .header-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .icon-back {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            color: #6B2685;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .icon-back:hover {
+            background-color: rgba(107, 38, 133, 0.15);
+        }
+
+        h2 {
+            color: #6B2685;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .internship-title {
+            display: flex;
+            color: #6B2685;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 30px 0 20px;
+            gap: 15px;
+        }
+
+        .icon-box {
+            background-color: #f3e8ff;
+            border-radius: 16px;
+            padding: 12px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-box img {
+            width: 28px;
+            height: 28px;
+        }
+
+        .section-box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #6B2685;
+            margin-bottom: 10px;
+        }
+
+        .score-box {
+            background: linear-gradient(to right, #6B2685, #A855F7);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .score-title {
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .mentor-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .mentor-name {
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .table td,
+        .table th {
+            border: none !important;
+            padding: 4px 8px;
+        }
+
+        .message-wrapper {
+            position: relative;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 12px;
+            padding: 15px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .message-wrapper:focus-within {
+            border-color: #6B2685;
+            box-shadow: 0 0 0 2px rgba(107, 38, 133, 0.2);
+        }
+
+        .message-wrapper textarea {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            resize: vertical;
+            width: 100%;
+            min-height: 100px;
+            padding: 10px;
+            padding-bottom: 50px;
+            box-sizing: border-box;
+        }
+
+        .see-more-btn {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: linear-gradient(to right, #6B2685, #A855F7);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 6px 18px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .upload-label {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #000000;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .upload-label img {
+            width: 20px;
+            height: 20px;
+            margin-right: 6px;
+        }
+
+        #cv-upload {
+            display: none;
+        }
+
+        .file-name-display {
+            font-size: 13px;
+            font-style: italic;
+            color: #666;
+            margin-left: 26px;
+        }
+
+        .b {
+            color: #FF971E !important;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header-text">
+        <h2><strong>MagDiti</strong></h2>
+        <a href="dashboard.html" class="icon-back">
+            <span class="glyphicon glyphicon-chevron-left" style="font-size: 24px;"></span>
+        </a>
+    </div>
+
+    <!-- Title -->
+    <div class="internship-title">
+        <div class="icon-box">
+            <img src="image/score.png" alt="Mentoring Icon">
+        </div>
+        <h3><b>Total Score</b></h3>
+    </div>
+
+    <div class="score-box">
+        <div class="score-title" style="font-size: 20px;">Total Score</div>
+        <div class="score-title" style="font-size: 32px;">80</div>
+    </div>
+
+    <!-- Notes -->
+    <div class="section-box">
+        <div class="section-title">Attitude and Work Ethics</div>
+        <ol style="padding-left: 18px;">
+            <li>Punctuality (arriving on time, meeting deadlines) : <span class="b">80</span></li>
+            <li>Responsibility for assigned tasks : <span class="b">80</span></li>
+            <li>Independence and initiative in completing tasks : <span class="b">82</span></li>
+        </ol>
+        <div class="section-title">Average : </div>
+    </div>
+
+    <div class="section-box">
+        <div class="section-title">Technical Skills</div>
+        <ol style="padding-left: 18px;">
+            <li>Understanding of assigned tasks and work field</li>
+            <li>Proficiency in using relevant tools or software</li>
+            <li>Quality of work output (accuracy, attention to detail, creativity)</li>
+            <li>Problem-solving and analytical thinking abilities</li>
+        </ol>
+        <div class="section-title">Average : </div>
+    </div>
+
+    <div class="section-box">
+        <div class="section-title">Teamwork</div>
+        <ol style="padding-left: 18px;">
+            <li>Effective communication skills</li>
+            <li>Ability to work well in a team</li>
+            <li>Openness to feedback and constructive criticism</li>
+        </ol>
+        <div class="section-title">Average : </div>
+    </div>
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
